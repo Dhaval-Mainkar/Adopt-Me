@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reptile1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/reptile1pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/doggo" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/reptilename"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/reptile1"
+            android:text="Cerci"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/reptilebreed"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/reptilename"
+            android:text="German shepherd"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/reptiledesc"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/reptilename"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/reptile1"
+            android:text="bruno is really a nice dog he plays he humps and that is all he does.i love him very much"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textline"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/reptiledesc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/reptile1"
+            android:text="--------------------------------------------------------------------------------"
+            android:textColor="#CDC7C7" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

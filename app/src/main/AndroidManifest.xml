@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trytry">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TryTry">
+        <activity
+            android:name=".details"
+            android:exported="false" />
+        <activity
+            android:name=".tp"
+            android:exported="false" />
+        <activity
+            android:name=".reptiles"
+            android:exported="false" />
+        <activity
+            android:name=".Birds"
+            android:exported="false" />
+        <activity
+            android:name=".cats"
+            android:exported="false" />
+        <activity
+            android:name=".dog"
+            android:exported="false" />
+        <activity
+            android:name=".addpet_toolbar"
+            android:exported="false" />
+        <activity
+            android:name=".add_pet"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.TryTry.NoActionBar" />
+        <activity
+            android:name=".nav"
+            android:exported="false"
+            android:label="@string/title_activity_nav" />
+        <activity
+            android:name=".Navigation"
+            android:exported="false" />
+        <activity
+            android:name=".asach"
+            android:exported="false" />
+        <activity
+            android:name=".edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".edit_toolbar"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_info"
+            android:exported="false" />
+        <activity
+            android:name=".User_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".toolbar"
+            android:exported="false" />
+        <activity
+            android:name=".Userprofile"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add_pet">
+
+    <include layout="@layout/activity_addpet_toolbar"></include>
+
+    
+
+    <!--Image-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/uploadimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            android:background="@drawable/border2"></ImageView>
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="110dp">
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="upload"
+            android:textSize="20sp"
+            android:backgroundTint="#0b0b0b"/>
+
+
+    </LinearLayout>
+
+    <!--PET TYPE-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/pet_type"
+            android:layout_width="380dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:ems="10"
+            android:hint="Type of animal"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!--Gender-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="380dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:ems="10"
+            android:hint="Gender"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!--Pet name-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/pet_name"
+            android:layout_width="380dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:ems="10"
+            android:hint="Pet name"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!--Breed-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/breed"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:ems="10"
+            android:hint="Breed"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!--Description-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <!--Done-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/done_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/donebtn"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Done"
+            android:textColor="#32CD32"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</LinearLayout>
